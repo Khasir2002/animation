@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Animation With dogs</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body background="/bg.jpg">
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <marquee style="position: absolute; bottom: 112px;" direction="right" scrollamount="15">
+        <img src="/a.gif" width="22%" />&emsp;&emsp;&emsp;
+        <img src="/b.gif" width="11%" />&emsp;
+        <img src="/c.gif" width="4%" />&nbsp;
+    </marquee>
+    <audio id="audio" controls autoplay>
+        <source src="gejji-gigiri-sadde-lahiru-nelumdeniya.mp3" />
+    </audio>
+</body>
+<script>
+    var audio = document.getElementById("audio");
+    audio.autoplay = true;
+    audio.load();
+    audio.play();
+</script>
+
+</html>
